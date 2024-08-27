@@ -15,15 +15,31 @@ html{
 }
 .page_3{
     background-image: url(education.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
 
 }
 .page_2{
     background-image: url(skill.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
 }
 .page_4{
     background-image: url(acheivement.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+}
+.page_5{
+    background-image: url(future.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +136,7 @@ nav a.active{
     border-bottom: 3px solid #b74b4b;
 }
 
-@media(max-width:70px){
+@media(max-width:60px){
     nav{
         position:absolute;
         display: none;
@@ -207,6 +223,7 @@ span{
 }
 .bio{
     color:rgb(145, 122, 122);
+    font-size: 100px;
 }
 .bio:hover{
     color: white;
