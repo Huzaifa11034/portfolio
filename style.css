@@ -218,9 +218,14 @@ span{
 
 .home-img{
     border-radius: 50%;
+    background: transparent;
+    transition: 3s;
 }
 .home-img :hover{
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
+    
+    background: #081b29;
+    opacity: .5;
 }
 .home-img img{
     position: relative;
