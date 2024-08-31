@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +8,6 @@
     outline: none;
     font-family: 'Poppins', sans-serif;
 }
-
 html{
     font-size: 62.5%;
 }
@@ -20,7 +18,8 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 .page_2{
     background-image: url(skill.jpg);
@@ -29,6 +28,8 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .page_4{
     background-image: url(acheivement.jpg);
@@ -37,6 +38,8 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .page_5{
     background-image: url(future.jpg);
@@ -45,12 +48,15 @@ html{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .box{
     margin:3vw;
-    height: 80vh;
+    height: max-content;
     width:30vw;
     border: 1px solid #b74b4b;
+    border-radius: 10px;
     padding: 1%;
     box-shadow: 0 0 25px  #b74b4b;
 }
@@ -61,21 +67,36 @@ html{
     margin:10vw;
     margin-bottom: 0;
     margin-top: 4vw;
-    height: 80vh;
+    height: max-content;
     width:60vw;
     border: 1px solid #b74b4b;
     padding: 1%;
     box-shadow: 0 0 25px  #b74b4b;
 }
 .box_a:hover{
-    background-color: rgba(255, 255, 255, 0.226);
+    background-color: rgba(255, 255, 255, 0.164);
 }
 .text{
     font-size: 15px;
 }
-
-
-
+.cov{
+    border: 2px solid #b74b4b;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    background: transparent;
+    margin: 10px;
+}
+.cov:hover{
+    color: black;
+    background-color: #b74b4b;
+    border-color: black;
+    font-size: 15px;
+}
+h1{
+    font-size: 21px;
+}
 
 
 
@@ -136,7 +157,7 @@ nav a.active{
     border-bottom: 3px solid #b74b4b;
 }
 
-@media(max-width:60px){
+@media(max-width:100px){
     nav{
         position:absolute;
         display: none;
