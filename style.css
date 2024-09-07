@@ -325,17 +325,14 @@ span{
 }
 
 @keyframes words{
-    0%, 25%{
+    0%, 33%{
         content: "Student";
     }
-    26%, 50%{
+    34%, 66%{
         content: "Kpcian";
     }
-    51%, 75%{
+    64%, 100%{
         content: "Bangladeshi";
-    }
-    76%, 100%{
-        content: "Python Learner";
     }
     
 }
