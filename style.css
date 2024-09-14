@@ -142,12 +142,12 @@ nav a{
     padding: 6px 20px;
     transition: .5s;
 }
-nav{
+/*nav{
     padding:1vw;
     background: #242323;
     border-radius: 20px;
     z-index: 0;
-}
+}*/
 nav a:hover{
     color: #b74b4b;
 }
