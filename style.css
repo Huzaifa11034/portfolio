@@ -395,4 +395,45 @@ span{
         margin-top: 4rem;
     }
 }
+/* animation */
+.loading{
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
+.loading span{
+    position: relative;
+    width: 20px;
+    height: 5px;
+}
+
+.loading span::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #b74b4b;
+    box-shadow: 0 0 5px #b74b4b,
+                0 0 15px #b74b4b,
+                0 0 30px #b74b4b,
+                0 0 50px #b74b4b;
+    animation: animate 8s linear infinite;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes animate {
+    0%{
+        transform-origin: 0 20px;
+        filter: hue-rotate(0deg);
+    }
+    20%{
+        transform: rotate(calc(-90deg * var(--i)));
+    }
+    60%{
+        transform: rotate(calc(0deg * var(--i)));
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
